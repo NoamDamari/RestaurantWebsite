@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRest-Contact</title>
+    <link rel="stylesheet" href="/Pages-CSS/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/3a3e965091.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+    <header>
+        <!-- Nav Bar Section -->
+        <nav class="navbar">
+            <a id="navbar-logo" href="/Pages-HTML/index.html">RestoLuxè</a>
+            <ul class="navbar-links">
+                <li><a href="/Pages-HTML/index.html">Home</a></li>
+                <li><a href="/Pages-HTML/about.html">About</a></li>
+                <li><a href="/Pages-HTML/menu.html">Menu</a></li>
+                <li><a href="/Pages-HTML/contact.html">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="mobile-nav-icon"></i>
+        </nav>    
+    </header> 
+    
+
+    <main>
+        <!-- Main Section -->
+        <div class="main-background">
+            <div class="main-container">
+                <div class="contact-sections">
+                    
+                    <!-- Contact Detailes -->
+                    <section class="contact-detailes">
+                        <div class="section"  id="address">
+                            <h3>Adress:</h3>
+                            <p>123 Somewhere street <br>TLV , Israel</p>
+                        </div>
+                        <div class="section" id="phone">
+                            <h3>Phone:</h3>
+                            <p>000-00-000-000</p>
+                        </div>
+                        <div class="section" id="opening-hours">
+                            <h3>Opening Hours:</h3>
+                            <p>12:00 - 00:00 <br>Every Day!</p>
+                        </div>
+                        <div class="section" id="social">
+                            <h3>Social Media:</h3>
+                            <div class="contact-social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Form -->
+                    <section class="contact-form-section">
+
+                        <h2>Connect with Us!</h2>
+                        <p>Have a Request or Feedback? <br> Let Us Know!</p>
+                    
+                        <form id="contact-form">
+
+                            <label for="full-name">Full Name:</label>
+                            <input 
+                            type="text" 
+                            placeholder="Enter your full name"
+                            id="full-name"
+                            name="full-name"
+                            autocomplete="off"
+                            required
+                            >
+                        
+                            <label for="phone-number">Phone Number:</label>
+                            <input 
+                            type="tel" 
+                            placeholder="Enter your phone number"
+                            id="phone-number"
+                            name="phone-number"
+                            autocomplete="off"
+                            required
+                            >
+                
+                            <label for="select-box">Select message subject:</label> 
+                            <select name="select-box" id="select-box">
+                                <option value="general">General Inquiry</option>
+                                <option value="reservation">Reservation</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            
+                            <label for="message-box">Write here:</label>
+                            <textarea id="message-box" name="message-box" rows="4" cols="50" placeholder="your message"></textarea>
+                       
+                            <button id="send-btn">Send</button>
+                        </form>
+
+                    </section>
+                </div>
+            </div>
+        </div>       
+    </main>
+
+
+    <footer>
+        <!-- Footer Section -->
+        <div class="footer-container">
+            <div class="footer-col" id="footer-links">
+                <h4>LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="footer-newsletter">
+                <h4>NEWSLETTER</h4>
+                <form id="footer-form">
+                    <h5>Subscribe for Exclusive Content and Updates!</h5>
+                    <input type="text" placeholder="E-mail Address" id="footer-input">
+                    <button id="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-col" id="footer-contact">
+                <h4>CONTACT</h4>
+                <h5>Address:</h5>
+                <p>123 Somewhere street<br>TLV , Israel</p>
+                <br>
+                <h5>Call Us:</h5>
+                <p><i class="fa fa-phone"></i> 000-00-000-00</p>
+                <br>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
